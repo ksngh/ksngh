@@ -21,7 +21,7 @@
                         <p>아이디어 내는 것을 좋아하고, 머릿속에 있던 것들을 구현하는 데 보람을 느낍니다.</p>
                     <p style="color: #4A90E2; margin: 1px;">함께하는 성장의 가치를 나누고 싶습니다.</p>
                         <p>동료는 저를 통해, 저는 동료를 통해 성장합니다.
-                        함께의 가치를 실천하고 싶어 디스코드 채널, 개발 스터디를 운영하고 있습니다.</p>
+                        함께의 가치를 실천하고 싶어 개발 스터디를 운영하고 있습니다.</p>
                     <p style="color: #4A90E2; margin: 1px;">
                         돌아볼 수 있음으로써 나아갈 수 있습니다.</p>
                         <p>학습한 것들을 정리하고 프로젝트에서 느낀 점들을 회고하는 블로그를 운영하고 있습니다.
@@ -60,8 +60,10 @@
                 <p> 1인 개발한 중앙대학교 펜싱동아리 훈련 투표 사이트입니다.<br>
                     정해진 시각에 투표가 열려 동아리 부원들이 선착순으로 투표할 수 있습니다.
                 </p>
-                <a href="https://github.com/ksngh/cau_vote"> 깃 허브 주소 >></a>&nbsp;&nbsp;
-                <a href="">배포 주소 >></a><br>
+                <a style="font-size: 19px;" href="https://github.com/ksngh/cau_vote"> 깃 허브 주소 >></a>&nbsp;&nbsp;
+                <a style="font-size: 19px;" 
+                
+                href="">배포 주소 >></a><br>
                 <h5 style="margin-top:20px ;">기술 스택</h5>
                 <ul>
                     <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
@@ -73,19 +75,47 @@
                     <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
                     <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white">
                     <img src="https://img.shields.io/badge/thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
+                    <img src="https://img.shields.io/badge/redis-FF4438?style=for-the-badge&logo=redis&logoColor=white">
+                    
                 </ul>
                 <h5 style="margin-top:20px ;">내가 기여한 부분</h5>
                 <ul style="margin-top: 15px;">
-                    <li><strong>인증 및 인가 관리</strong>
-                        <ul>
-                            <li style="margin-top: 5px;">Oauth2.0과 Spring Security를 이용한 로그인 및 회원가입 기능</li>
-                            <li>두 번째 항목의 서브 항목 2</li>
+                    <li><strong>캐싱 처리 및 스케줄러 관리</strong>
+                        <ul class="second-list">
+                            <li style="margin-top: 5px;">redis를 이용하여 랭킹 조회 로직 캐싱 처리</li>
+                            <li>스프링 스케줄러를 구현하여 주간 업데이트 실행</li>
                         </ul>
                     </li>
-                    <li><strong>실시간 데이터 업데이트 및 동시성 문제 해결</strong>: 웹소켓을 이용한 실시간 투표 데이터 전송 및 동시성 문제 해결</li>
-                    <li><strong>단위 테스트</strong>: JUnit 과 Mockito를 이용하여 단위 테스트를 구현</li>
-                    <li><strong>CI/CD</strong>: git actions, docker를 활용하여 지속적인 통합 및 배포 시스템 구축</li>
-                    <li><strong>투표 생성 및 투표 시스템</strong>: </li>
+                    <li><strong>실시간 데이터 업데이트 및 동시성 문제 해결</strong>
+                        <ul class="second-list">
+                            <li style="margin-top: 5px;">
+                                웹소켓 API를 이용하여 실시간 투표 정보 업데이트
+                            </li>
+                            <li>
+                                BlocingQueue를 통해 순차적으로 투표를 진행하여 동시성 문제 해결
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><strong>테스트 코드 작성</strong>
+                        <ul class="second-list">
+                            <li style="margin-top: 5px;">
+                                JUnit 과 Mockito를 이용하여 단위 테스트를 구현
+                            </li>
+                            <li>
+                                테스트 주도 개발을 통해 코드 작성 속도 증진
+                            </li>    
+                        </ul>
+                        
+                    </li>
+                    <li><strong>CI/CD</strong>
+                        <ul class="second-list">
+                            <li style="margin-top: 5px;">
+                                git actions, docker를 활용하여 지속적인 통합 및 배포 시스템 구축</li>
+                            </li>
+
+                        </ul>
+                    </li>
                 </ul>
 
             <h4 style="font-size: 35px; font-weight: bold; margin-top: 100px;">
@@ -126,7 +156,7 @@
                         <ul class="second-list">
                             <li style="margin-top: 5px;"> 사용자 트리거로 알림 생성 및 수신</li>
                             <li>섹터 별로 분기하고 해당 내용을 불러와 메세지 생성</li>
-                            <li>읽음 여부에 따라 알림 표기 설정, 삭제 기능 구현 </li>
+                            <li>REST API를 사용해 읽음 여부에 따라 알림 표기 설정, 삭제 기능 구현 </li>
                         </ul>
                     </li>
 
@@ -162,30 +192,5 @@
             </p>
         </section>
     </div>
-        
-
-
-<!-- 
-
-                <a href= https://www.notion.so/OHBOON-24-06-04-24-06-28-d733dc17535f46f9a405ebcda4c3effb target="_blank">
-                    <h5 style="color: #4A90E2;">
-                        OHBOON
-                    </h5>
-                </a>
-                <p>(24.06.04~24.06.28) 배포 중단</p>
-                <p>개발자들끼리 매칭할 수 있는 시스템을 기획했습니다.</p>
-                
-                    <a href= # target="_blank">
-                        <h5 style="color: #4A90E2;">
-                            CODE BACK
-                        </h5>
-                    </a>
-                    <p>(24.08.17~24.09.25) 배포 중</p>
-                <p> 코드 및 프로젝트 리뷰 사이트 입니다. 
-                    개발자의 성장에 있어 리뷰를 주고 받는 것이 큰 의미가 있는데 반해 리뷰가 이루어질 수 있는 장소가 부족하다고 생각하여 기획하게 되었습니다.
-                </p>
- -->
-
-    <script src="cau_vote.js"></script>
 </body>
 </html>
