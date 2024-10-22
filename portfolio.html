@@ -16,7 +16,7 @@
         <section>
             <div class="row">
                 <div class="column" >
-                    <h1>&#x2708;안녕하세요, <br> 김성호 입니다.</h1>
+                    <h1 style="font-size: 40px">&#x2708;백엔드 개발자 <br><span style="color: #4A90E2;">김성호</span> 입니다.</h1>
                     <p style="color: #4A90E2; margin: 1px;">창의적이고 도전적인 업무를 주도적으로 진행하고 싶습니다.</p>
                         <p>아이디어 내는 것을 좋아하고, 머릿속에 있던 것들을 구현하는 데 보람을 느낍니다.</p>
                     <p style="color: #4A90E2; margin: 1px;">함께하는 성장의 가치를 나누고 싶습니다.</p>
@@ -52,13 +52,12 @@
                 <h3 style="color:  #7D7D7D; font-weight: 500;">프로젝트</h3>
                 
                 
-                
                 <h4 style="font-size: 35px; font-weight: bold;">
                     CAU VOTE
                 </h4>
-                    <p>(24.09.09~) 배포 중</p>
-                <p> 1인 개발한 중앙대학교 펜싱동아리 훈련 투표 사이트입니다.<br>
-                    정해진 시각에 투표가 열려 동아리 부원들이 선착순으로 투표할 수 있습니다.
+                    <p>(24.09.09~) <strong>배포 중</strong></p>
+                <p> <span style="color: #4A90E2; font-weight: bold;">50명+</span> 가량 이용중인 1인 개발한 중앙대학교 펜싱동아리 훈련 투표 사이트입니다.<br>
+                    정해진 시각에 투표가 열려 선착순으로 투표할 수 있습니다.
                 </p>
                 <a style="font-size: 19px;" href="https://github.com/ksngh/cau_vote"> 깃 허브 주소 >></a>&nbsp;&nbsp;
                 <a style="font-size: 19px;" 
@@ -83,16 +82,19 @@
                     <li><strong>캐싱 처리 및 스케줄러 관리</strong>
                         <ul class="second-list">
                             <li style="margin-top: 5px;">redis를 이용하여 랭킹 조회 로직 캐싱 처리</li>
-                            <li>스프링 스케줄러를 구현하여 주간 업데이트 실행</li>
+                            <li>스프링 스케줄러를 활용하여 주간 및 학기 별 업데이트 실행</li>
                         </ul>
                     </li>
                     <li><strong>실시간 데이터 업데이트 및 동시성 문제 해결</strong>
                         <ul class="second-list">
                             <li style="margin-top: 5px;">
-                                웹소켓 API를 이용하여 실시간 투표 정보 업데이트
+                                웹소켓 API와 STOMP를 이용하여 실시간 투표 정보 업데이트
                             </li>
                             <li>
-                                BlocingQueue를 통해 순차적으로 투표를 진행하여 동시성 문제 해결
+                                ConcurrentLinkedQueue를 통해 순차적으로 투표를 진행하여 동시성 문제 해결
+                            </li>
+                            <li>
+                                ConcurrentHashMap을 구현하여 순서를 고려하지 않고 안전하게 투표를 취소하는 기능 구현
                             </li>
 
                         </ul>
@@ -100,28 +102,31 @@
                     <li><strong>테스트 코드 작성</strong>
                         <ul class="second-list">
                             <li style="margin-top: 5px;">
-                                JUnit 과 Mockito를 이용하여 단위 테스트를 구현
+                                JUnit 과 Mockito를 이용하여 의존성 Mocking, 단위 테스트를 구현
                             </li>
                             <li>
-                                테스트 주도 개발을 통해 코드 작성 속도 증진
+                                테스트 주도 개발(TDD)을 통해 코드 작성 속도 증진
                             </li>    
                         </ul>
                         
                     </li>
-                    <li><strong>CI/CD</strong>
+                    <li><strong>예외 처리</strong>
                         <ul class="second-list">
-                            <li style="margin-top: 5px;">
-                                git actions, docker를 활용하여 지속적인 통합 및 배포 시스템 구축</li>
-                            </li>
-
+                            <li style="margin-top: 5px;"> GlobalExceptionHandler를 구현하여 전역적 예외 처리 로직 구현</li>
+                            <li>관심사를 분리하여 ControllerAdvice를 활용해 컨트롤러에서 예외 처리</li>
                         </ul>
                     </li>
                 </ul>
+                <h5 style="margin-top:20px ;">회고 및 트러블 슈팅</h5>
+                <ul style="margin-top: 15px; margin-bottom: 30px;">
+                    <li><a href="https://velog.io/@ksngh/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-%EC%9B%B9-%EC%86%8C%EC%BC%93-%EC%9D%B8%EC%A6%9D-%EB%B0%8F-%EC%9D%B8%EA%B0%80" target="_blank">웹 소켓과 스프링 시큐리티</a></li>
+                </ul>
+            
 
             <h4 style="font-size: 35px; font-weight: bold; margin-top: 100px;">
                 CODEBACK
             </h4>
-                <p>(24.08.17~24.09.25) 배포 중</p>
+                <p>(24.08.17~24.09.25) <strong>배포 중</strong></p>
             <p> 시니어와 주니어 개발자 간의 상호 작용을 통하여 코딩 능력을 향상시키고, <br>
                 성장을 촉진시키는 코드 및 프로젝트 리뷰 플랫폼 입니다.
             </p>
@@ -176,8 +181,8 @@
             </ul>
             </div>
         </section>
-
         <section>
+            <div class="body">
             <h3 style="color:  #7D7D7D; font-weight: 500;">교육</h3>
             <p>
                 <span style="font-weight: bold;">중앙대학교 수학과 학사 졸업</span>
@@ -190,6 +195,7 @@
             <p style="font-size: smaller; margin-top: 0%;">
                 Public Cloud 활용 자바 웹 애플리케이션(Spring, Docker)
             </p>
+        </div>
         </section>
     </div>
 </body>
