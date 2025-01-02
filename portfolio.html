@@ -72,7 +72,6 @@
                     <img src="https://img.shields.io/badge/amazon EC2-FF9900?style=for-the-badge&logo=amazon ec2&logoColor=white">
                     <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
                     <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white">
-                    <img src="https://img.shields.io/badge/thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
                     <img src="https://img.shields.io/badge/redis-FF4438?style=for-the-badge&logo=redis&logoColor=white">
                     
                 </ul>
@@ -162,6 +161,33 @@
             <div class = "body">
                 <h3 style="color:  #7D7D7D; font-weight: 500;">토이 프로젝트</h3>
                 <h5 style="font-size: 35px; font-weight: bold;">
+                    쿠폰 서비스
+                </h5>
+                    <p>(24.12.05~ 24.12.11) / 1인 개발 </p>
+                <a style="font-size: 19px;" href="https://github.com/ksngh/coupon_service" target="_blank"> 깃 허브 주소 >></a>&nbsp;&nbsp;
+                <h5 style="margin-top:20px ;">내가 기여한 부분</h5>
+                <ul style="margin-top: 15px;">
+                    <li><strong>오래된 쿠폰 데이터 아카이빙</strong>
+                        <ul class="second-list">
+                            <li style="margin-top: 5px;">mongoDB를 활용하여 지워진 지 오래된 데이터 마이그레이션</li>
+                            <li>Spring Batch를 활용하여 일정 주기에 chunk 단위로 데이터 아카이빙 진행</li>
+                        </ul>
+                    </li>
+                    <li><strong>동시 쿠폰 사용 처리</strong>
+                        <ul class="second-list">
+                            <li style="margin-top: 5px;">
+                                Redis에 lock을 걸어서 분산 서비스를 고려하여 동시성 처리
+                            </li>
+                            <li>circuit breaker를 활용하여 시스템 장애시 서버 내부에서 concurrentHashMap 사용하여 동시성 처리</li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- <h5 style="margin-top:20px ;">회고 및 트러블 슈팅</h5>
+                <ul style="margin-top: 15px; margin-bottom: 30px;">
+                    <li><a href="https://velog.io/@ksngh/REST-docs-%EB%8F%84%EC%9E%85%EA%B8%B0" target="_blank">REST docs 도입기</a></li>
+                    <li><a href="https://velog.io/@ksngh/QueryDSL-VS-JPA-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank">QueryDSL VS JPA 성능 테스트</a></li>
+                </ul> -->
+                <h5 style="font-size: 35px; font-weight: bold;">
                     음식 배달 서비스
                 </h5>
                     <p>(24.11.08~ 24.11.18) </p>
@@ -189,6 +215,7 @@
                     <li><a href="https://velog.io/@ksngh/REST-docs-%EB%8F%84%EC%9E%85%EA%B8%B0" target="_blank">REST docs 도입기</a></li>
                     <li><a href="https://velog.io/@ksngh/QueryDSL-VS-JPA-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank">QueryDSL VS JPA 성능 테스트</a></li>
                 </ul>
+            </div>
         </section>
         <section>
             <div class="body">
