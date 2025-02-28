@@ -445,3 +445,23 @@ ul>li:before {
     font-size: 17px;
 }
 
+.custom-list {
+    list-style: none; /* 기존 리스트 마커 제거 */
+    padding-left: 20px; /* 들여쓰기 적용 */
+    margin-bottom: 0px;
+}
+
+.custom-list li {
+    font-size: 14px; /* 글자 크기 조정 */
+    color: green; /* 초록색 적용 */
+    position: relative; /* 가상 요소 위치 설정 */
+    padding-left: 20px; /* ">>" 기호 공간 확보 */
+}
+
+.custom-list li::before {
+    content: ">>"; /* 커스텀 마커 설정 */
+    position: absolute;
+    left: 0;
+    color: green; /* 마커 색상 적용 */
+    font-weight: bold;
+}
